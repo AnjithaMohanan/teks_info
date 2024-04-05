@@ -1,0 +1,27 @@
+<!-- <% include('../layout/header.ejs') %>
+<h1>Welcome  Home</h1>
+<% include('../layout/footer.ejs') %> -->
+<% include('../layout/header.ejs') %>
+<h1>Welcome admin Home, <%=admin.name%></h1>
+<a href="/admin/dashboard"></a>
+<table style="width: 50%;">
+    <tr>
+        <td><img src="/userImages/<%= admin.image %>" width="100px" height="100px"></td>
+    </tr>
+    
+<!-- <tr>
+    <td><img src="/userImages/<%= admin.image%>" width="100px" height="100px"<%= admin.image%>"></td>
+</tr> -->
+<tr>
+    <td>Name</td>
+    <td><%=admin.email %></td>
+</tr>
+<tr>
+    <td>Mobile</td>
+    <td><%=admin.mobile %></td>
+</tr>
+
+</table>
+
+
+<% include('../layout/footer.ejs') %>
